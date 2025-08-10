@@ -2,7 +2,7 @@
 ELMNet: Extremely Lightweight Mamba Network for Biological Image Segmentation (Submitted to IEEE ROBIO2025)
 
 <div align="center">
-<img src="figure/parametets.png" style="width: 100%;height: 100%">
+<img src="figure/parametets.png" style="width: 80%;height: 80%">
 </div>
 
 <p align="center"><b><font size="70"></font></b></p>
