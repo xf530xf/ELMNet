@@ -4,7 +4,7 @@ from torch.cuda.amp import autocast, GradScaler
 from torch.utils.data import DataLoader
 from loader import *
 
-from models.UltraLight_VM_UNet import UltraLight_VM_UNet
+from models.ELMNet import ELMNet
 from engine import *
 import os
 import sys
@@ -70,7 +70,7 @@ def main(config):
 
     print('#----------Prepareing Models----------#')
     model_cfg = config.model_config
-    model = UltraLight_VM_UNet(num_classes=model_cfg['num_classes'], 
+    model = ELMNet(num_classes=model_cfg['num_classes'], 
                                input_channels=model_cfg['input_channels'], 
                                c_list=model_cfg['c_list'], 
                                split_att=model_cfg['split_att'], 
@@ -200,4 +200,5 @@ def main(config):
 
 if __name__ == '__main__':
     config = setting_config
+
     main(config)
