@@ -1,4 +1,4 @@
-<img width="582" height="398" alt="parametets" src="https://github.com/user-attachments/assets/c7ae6651-035f-4136-aa05-e579d451addd" /># ELMNet
+
 ELMNet: Extremely Lightweight Mamba Network for Biological Image Segmentation (Submitted to IEEE ROBIO2025)
 
 <div align="center">
