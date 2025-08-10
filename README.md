@@ -54,14 +54,14 @@ pip install pillow
 2. In the 'Prepare_your_dataset.py' file, change the number of training sets, validation sets and test sets you want.</br>
 3. Run 'Prepare_your_dataset.py'. </br>
 
-**2. Train the UltraLight VM-UNet.** </br>
+**2. Train the ELMNet.** </br>
 You can simply run the following command to start training, or download the weights file based on this [issue](https://github.com/wurenkai/UltraLight-VM-UNet/issues/38) before training.
 ```
 python train.py
 ```
 - After trianing, you could obtain the outputs in './results/' </br>
 
-**3. Test the UltraLight VM-UNet.**  
+**3. Test the ELMNet.**  
 First, in the test.py file, you should change the address of the checkpoint in 'resume_model'.
 ```
 python test.py
