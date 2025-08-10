@@ -1,7 +1,11 @@
-# ELMNet
+<img width="582" height="398" alt="parametets" src="https://github.com/user-attachments/assets/c7ae6651-035f-4136-aa05-e579d451addd" /># ELMNet
 ELMNet: Extremely Lightweight Mamba Network for Biological Image Segmentation (Submitted to IEEE ROBIO2025)
 
+<div align="center">
+<img src="figure/parametets.png" style="width: 100%;height: 100%">
+</div>
 
+<p align="center"><b><font size="70"></font></b></p>
 
 **0. Main Environments.** </br>
 The environment installation procedure can be followed by [VM-UNet](https://github.com/JCruan519/VM-UNet), or by following the steps below (python=3.8):</br>
