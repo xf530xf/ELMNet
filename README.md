@@ -37,11 +37,8 @@ pip install pillow
 1. Download the ISIC 2018 train dataset from [this](https://challenge.isic-archive.com/data) link and extract both training dataset and ground truth folders inside the `/data/dataset_isic18/`. </br>
 2. Run `Prepare_ISIC2018.py` for data preparation and dividing data to train, validation and test sets. </br>
 
-*C. PH<sup>2</sup>* </br>
-1. Download the PH<sup>2</sup> dataset from [Dropbox](https://www.dropbox.com/s/k88qukc20ljnbuo/PH2Dataset.rar) or [Google Drive](https://drive.google.com/file/d/1AEMJKAiORlrwdDi37dRqbqXi6zLmnU3Q/view?usp=sharing) and extract both training dataset and ground truth folders inside the `/data/PH2/`. </br>
-2. Run `Prepare_PH2.py` to preprocess the data and form test sets for external validation. </br>
 
-*D. Prepare your own dataset* </br>
+*C. Prepare your own dataset* </br>
 1. The file format reference is as follows. (The image is a 24-bit png image. The mask is an 8-bit png image. (0 pixel dots for background, 255 pixel dots for target))
 - './your_dataset/'
   - images
