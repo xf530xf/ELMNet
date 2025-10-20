@@ -176,8 +176,6 @@ class LayerNorm(nn.Module):
             x = self.weight[:, None, None] * x + self.bias[:, None, None]
             return x
 
-# Cross Attention Block
-# 哔哩哔哩：CV缝合救星
 class CAB(nn.Module):
     def __init__(self, dim, num_heads, bias):
         super(CAB, self).__init__()
@@ -215,7 +213,6 @@ class CAB(nn.Module):
         return out
 
 
-# Intensity Enhancement Layer
 class IEL(nn.Module): # 强度增强层
     def __init__(self, dim, ffn_expansion_factor=2.66, bias=False):
         super(IEL, self).__init__()
@@ -244,7 +241,6 @@ class IEL(nn.Module): # 强度增强层
         x = self.project_out(x)
         return x
 
-# Lightweight Cross Attention
 class LCA(nn.Module):
     def __init__(self, dim, num_heads, bias=False):
         super(LCA, self).__init__()
@@ -507,7 +503,7 @@ class ELMNet(nn.Module):
 
         # print(out4.shape, t5.shape) # torch.Size([8, 32, 16, 16])
         # out4 = torch.add(out4, t4) # b, c3, H/16, W/16
-        out4 = self.LCA4(out4, t4) ###########################
+        out4 = self.LCA4(out4, t4) 
         
         out3 = F.gelu(F.interpolate(self.dbn3(self.decoder3(out4)),scale_factor=(2,2),mode ='bilinear',align_corners=True)) # b, c2, H/8, W/8
         # out3 = torch.add(out3, t3) # b, c2, H/8, W/8
