@@ -8,7 +8,7 @@
 <p align="center"><b><font size="70"></font></b></p>
 
 **0. Main Environments.** </br>
-The environment installation procedure can be followed by [VM-UNet](https://github.com/JCruan519/VM-UNet), or by following the steps below (python=3.8):</br>
+The environment installation procedure can be followed by [ELMNet](https://github.com/xf530xf/ELMNet), or by following the steps below (python=3.8):</br>
 ```
 conda create -n elmnet python=3.8
 conda activate elmnet
@@ -56,7 +56,7 @@ pip install pillow
 3. Run 'Prepare_your_dataset.py'. </br>
 
 **2. Train the ELMNet.** </br>
-You can simply run the following command to start training, or download the weights file based on this [issue](https://github.com/wurenkai/UltraLight-VM-UNet/issues/38) before training.
+You can simply run the following command to start training
 ```
 python train.py
 ```
